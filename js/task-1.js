@@ -1,4 +1,12 @@
-const name = 'Генератор защитного поля';
-const prise = '1000';
+// const name = 'Генератор защитного поля';
+// let price = 1000;
 
-console.log('Выбран «Генератор защитного поля», цена за штуку 1000 кредитов');
+// const sameMessage = `Выбран ${name}, цена за штуку ${price} кредитов`
+// console.log(sameMessage);
+
+// price = 2000;
+// const firstMessage = `Выбран ${name}, цена за штуку ${price} кредитов`
+// console.log(firstMessage);
+
+
+
