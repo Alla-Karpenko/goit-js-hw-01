@@ -11,46 +11,44 @@ const jamaica = 'Ямайка';
 let country;
 let price;
 let message;
-
-message = prompt(`Введите страну`);
-
+   
+message = prompt(`Введите страну`)
+    
 if (message === null) {
     alert(`Отменено пользователем`);
 } else {
     country = message.toLowerCase() === message.toLowerCase()
-    message = `Доставка в ${country} будет стоить ${price} кредитов`;
-        
-
     
+   
     switch (country) {
-    
+
         case china:
-            price = `100`;
+            price = '100';
             break;
-    
+        
         case chile:
-            price = `250`;
+            price = '250';
             break;
     
         case australia:
-            price = `170`;
+            price = '170';
             break;
     
         case india:
-            price = `80`;
+            price = '80';
             break;
     
         case jamaica:
-            price = `120`;
+            price = '120';
             break;
     
     
-        default: 
-            //  (price > 0) 
-            //  message = `Доставка в ${country} будет стоить ${price} кредитов`;
+        default:
+            message = 'В вашей стране доставка не доступна';
          
-        
     }
+   
     
-    
+    alert(`Доставка в ${country} будет стоить ${price} кредитов`);
+        
 }
