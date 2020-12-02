@@ -1,54 +1,40 @@
-//создать цикл который спрашивает пользователя ввести страну 
-// если не null создать букбы не чувствительными к регистру
-//после введения страны вывести сообщение о стоимости доставки 
-//если null после неправильно указаной страны то выводим в alert cообщение что доставки нет в страну которую указал пользователь
-const china = 'Китай';
-const chile = 'Чили';
-const australia = 'Австралия';
-const india = 'Индия';
-const jamaica = 'Ямайка';
-
 let country;
-let price;
+let price ;
 let message;
    
-message = prompt(`Введите страну`)
+country = prompt(`Введите страну`)
     
-if (message === null) {
-    alert(`Отменено пользователем`);
+if (country === null) {
+    message = 'Отменено пользователем';
 } else {
-    country = message.toLowerCase() === message.toLowerCase()
-    
-   
+    country = country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
+}
     switch (country) {
-
-        case china:
+        case 'Китай':
             price = '100';
             break;
         
-        case chile:
+        case 'Чили':
             price = '250';
             break;
     
-        case australia:
+        case 'Австралия':
             price = '170';
             break;
     
-        case india:
+        case 'Индия':
             price = '80';
             break;
     
-        case jamaica:
+        case 'Ямайка':
             price = '120';
             break;
     
     
         default:
-            message = 'В вашей стране доставка не доступна';
-         
+            message = 'Ввашей стране доставка не доступна';
     }
-   
-    
-    alert(`Доставка в ${country} будет стоить ${price} кредитов`);
-        
+if (price) {
+    message = `Доставка в ${country} будет стоить ${price} кредитов`;
 }
+alert(message);

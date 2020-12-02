@@ -1,15 +1,15 @@
-// let input;
-// let total = 0;
+let input;
+let total = 0;
 
-// do {
-//     let input = prompt(`Введите число`);
+do {
+    let input = prompt(`Введите число`);
 
-//     if (input === null) {
-//         break;
-//     }
+    if (input === null) {
+        break;
+    }
 
-//     input = Number(input);
-//     total += input;
-// } while (true);
+    input = Number(input);
+    total += input;
+} while (true);
 
-// console.log(`Общая сумма ${total}`);
+console.log(`Общая сумма ${total}`);
